@@ -10,14 +10,20 @@
 
 	<%
 		request.setCharacterEncoding("utf-8");
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		String gender = request.getParameter("gender");
+		String signupSource = request.getParameter("dropdown");
+		String address = request.getParameter("list");
+		String memo = request.getParameter("memo");
 	%>
 	
-	아이디 : <br>
-	비밀번호 : <br>
-	성별 : <br>
-	가입경로 : <br>
-	주소 : <br>
-	메모 : <br>
+	아이디 : <%= id %> <br>
+	비밀번호 : <%= password %> <br>
+	성별 : <%= gender %> <br>
+	가입경로 : <%= signupSource %> <br>
+	주소 : <%= address %> <br>
+	메모 : <%= memo %> <br>
 	
 </body>
 </html>
