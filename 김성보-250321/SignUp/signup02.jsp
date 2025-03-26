@@ -13,7 +13,7 @@
 		String id = request.getParameter("id");
 		String password = request.getParameter("password");
 		String gender = request.getParameter("gender");
-		String signupSource = request.getParameter("dropdown");
+		String dropdown = request.getParameter("dropdown");
 		String address = request.getParameter("list");
 		String memo = request.getParameter("memo");
 	%>
@@ -21,7 +21,7 @@
 	아이디 : <%= id %> <br>
 	비밀번호 : <%= password %> <br>
 	성별 : <%= gender %> <br>
-	가입경로 : <%= signupSource %> <br>
+	가입경로 : <%= dropdown %> <br>
 	주소 : <%= address %> <br>
 	메모 : <%= memo %> <br>
 	
